@@ -14,10 +14,6 @@ def hobbies():
 def jobs():
     return render_template("jobs.html")
 
-@app.route('/blog')
-def blog():
-    return render_template("blog.html")
-
 @app.route('/extracurriculars')
 def clubs():
     return render_template("clubs.html")

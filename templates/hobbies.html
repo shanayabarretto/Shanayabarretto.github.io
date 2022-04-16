@@ -1,4 +1,111 @@
 {% extends "layout.html" %}
 {% block body %}
-  <h1>Hello</h1>
+  <br><br><br>
+  <div class="pages">
+  <h1 class="text-center">Hobbies!</h1>
+  <p class="text-center">A collection of the activities I occupy my free time with...</p>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Music
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div style="float: left">
+              <img src="../static/images/piano.jpg" style="margin-left: 40px" class="img-thumbnail hobby" alt="...">
+            </div>
+            <div class="rightdiv">
+              <br>
+              <h2>Music</h2>
+              <p>Playing piano is probably my favourite hobby, followed closely by ukulele. 
+              I really hope to start learning guitar soon as well! I started playing piano about ten years ago, 
+              and did lessons for a large amount of that time. I really enjoy taking my favourite songs 
+              (dorothea by Taylor Swift, most recently) and learning them on piano. Last year my friend and I did a piano/guitar 
+              duet to champagne problems by Taylor Swift (I am a big fan) for our school's talent show. 
+              I picked up ukulele more recently during the pandemic and have been using the wide variety of 
+              youtube tutorials to learn more songs.</p>
+            </div>
+            <div style="clear: left;"><br></div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Embroidery
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div style="float: right">
+              <br>
+              <img src="../static/images/embroidery.jpg" class="img-thumbnail hobby" style="margin-right: 40px" alt="...">
+            </div>
+            <div class="leftdiv">
+              <br><h2>Embroidery</h2>
+              <p>Embroidery was another hobby I picked up during the pandemic. 
+                I have mostly worked on customizing shirts so far, and hope to start making a few for friends and family soon. 
+                My favourite shirt I made is easily one inspired by the song mirrorball by Taylor Swift and a sweatshirt design 
+                by an online store called Dizzy Dahlias.</p>
+            </div>
+            <div style="clear: right;"><br></div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Reading
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div style="float: left">
+              <img src="../static/images/attwn.jpg" style="margin-left: 50px" class="img-thumbnail hobby" alt="...">
+            </div>
+            <div class="rightdiv2">
+              <br>
+              <h2>Reading</h2>
+              <p>Over this co-op term, I found myself with a little extra time in the evenings, and returned to reading, 
+                a hobby I grew to have less time for in the later years of high school. I love historical fiction, science fiction, 
+                and mystery books. My most recent favourite is 'And Then There Were None' by Agatha Christie, and my all time favourite book is 'The Book Thief'
+                by Markus Zusak.</p>
+            </div>
+            <div class="rightdiv3">
+              <img src="../static/images/bookthief.jpg" style="margin-left: 40px" class="img-thumbnail hobby" alt="...">
+            </div>
+            <div style="clear: left;"><br></div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Customizations
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+
+            <div style="float: left">
+              <img src="../static/images/uke.jpg" style="margin-left: 50px" class="img-thumbnail hobby" alt="...">
+            </div>
+            <div class="rightdiv2">
+              <br><h2>Customizations</h2>
+              <p>Something else I love doing is adding a bit of my personality to the jewlery I wear or the items I own. The first ukulele I bought 
+                (as part of a build it yourself set) didn't hold its tune too well, so when I saved up for a new one, I decided to turn it into an art piece. 
+                Disney music is super fun to play, so I decided to put my favourite characters on the ukulele. I also decided to make a few earring pairs for myself 
+                and a friend with our favourite album covers on them (folklore- Taylor Swift, Fine Line- Harry Styles). I love completing small crafts projects like these 
+                when I have some spare time.</p>
+            </div>
+            <div class="rightdiv3">
+              <img src="../static/images/earrings.jpg" style="margin-left: 40px; max-width: 160px;" class="img-thumbnail" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

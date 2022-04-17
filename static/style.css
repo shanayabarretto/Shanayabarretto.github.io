@@ -43,3 +43,35 @@
     width: 79%;
     margin-right: 50px;
 }
+
+.col-item {
+  margin-right: 2%;
+  margin-bottom: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.col-item:nth-child(2n) {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.col-item:nth-last-child(2),
+.col-item:last-child {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(65% - 1px);
+  height: 97%;
+  border-right: 1px solid grey;
+}

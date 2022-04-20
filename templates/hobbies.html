@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
   <br><br><br>
-  <div class="pages">
+  <div style="margin-left: 50px; margin-right: 50px">
   <h1 class="text-center" style="color: #72A276;">Hobbies!</h1>
   <p class="text-center">A collection of the activities I occupy my free time with...</p>
     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -14,18 +14,18 @@
         <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <div style="float: left">
-              <img src="../static/images/piano.jpg" style="margin-left: 40px" class="img-thumbnail hobby" alt="Photo of a piano with 'Safe and Sound' sheet music on it">
+              <img src="../static/images/piano.jpg" style="margin-left: 40px; max-width: 150px;" class="img-thumbnail" alt="Photo of a piano with 'Safe and Sound' sheet music on it">
             </div>
-            <div class="rightdiv">
+            <div id="music_text">
               <br>
               <h2 style="color: #1C6E8C;">Music</h2>
               <p>Playing piano is probably my favourite hobby, followed closely by ukulele. 
               I really hope to start learning guitar soon as well! I started playing piano about ten years ago, 
               and did lessons for a large amount of that time. I really enjoy taking my favourite songs 
-              (dorothea by Taylor Swift, most recently) and learning them on piano. Last year my friend and I did a piano/guitar 
+              (most recently dorothea by Taylor Swift) and learning them on piano. Last year my friend and I did a piano/guitar 
               duet to champagne problems by Taylor Swift (I am a big fan) for our school's talent show. 
               I picked up ukulele more recently during the pandemic and have been using the wide variety of 
-              youtube tutorials to learn more songs.</p>
+              youtube tutorials available to learn songs.</p>
             </div>
             <div style="clear: left;"><br></div>
           </div>
@@ -41,9 +41,9 @@
           <div class="accordion-body">
             <div style="float: right">
               <br>
-              <img src="../static/images/embroidery.jpg" class="img-thumbnail hobby" style="margin-right: 40px" alt="Embroidered t-shirt with the lettering 'I'm a mirrorball'">
+              <img src="../static/images/embroidery.jpg" class="img-thumbnail" style="margin-right: 40px; max-width: 150px;" alt="Embroidered t-shirt with the lettering 'I'm a mirrorball'">
             </div>
-            <div class="leftdiv">
+            <div id="em_text">
               <br><h2 style="color: #1C6E8C;">Embroidery</h2>
               <p>Embroidery was another hobby I picked up during the pandemic. 
                 I have mostly worked on customizing shirts so far, and hope to start making a few for friends and family soon. 
@@ -63,18 +63,17 @@
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <div style="float: left">
-              <img src="../static/images/attwn.jpg" style="margin-left: 50px" class="img-thumbnail hobby" alt="'And Then There Were None' by Agatha Christie">
+              <img src="../static/images/attwn.jpg" style="margin-left: 50px; max-width: 150px;" class="img-thumbnail" alt="'And Then There Were None' by Agatha Christie">
             </div>
-            <div class="rightdiv2">
+            <div class="rightdiv_a">
               <br>
               <h2 style="color: #1C6E8C;">Reading</h2>
-              <p>Over this co-op term, I found myself with a little extra time in the evenings, and returned to reading, 
-                a hobby I grew to have less time for in the later years of high school. I love historical fiction, science fiction, 
-                and mystery books. My most recent favourite is 'And Then There Were None' by Agatha Christie, and my all time favourite book is 'The Book Thief'
-                by Markus Zusak.</p>
+              <p>Over this co-op term, I found myself with a little extra time in the evenings and returned to reading. I love historical fiction, science fiction, 
+                and mystery books. A recent favourite of mine is 'And Then There Were None' by Agatha Christie, and my all time favourite book is 'The Book Thief'
+                by Markus Zusak. I'm always looking for recommendations so please reach out if you have any!</p>
             </div>
-            <div class="rightdiv3">
-              <img src="../static/images/bookthief.jpg" style="margin-left: 40px" class="img-thumbnail hobby" alt="'The Book Thief' by Markus Zusak">
+            <div class="rightdiv_b">
+              <img src="../static/images/bookthief.jpg" style="margin-left: 40px; max-width: 150px;" class="img-thumbnail" alt="'The Book Thief' by Markus Zusak">
             </div>
             <div style="clear: left;"><br></div>
           </div>
@@ -90,17 +89,16 @@
           <div class="accordion-body">
 
             <div style="float: left">
-              <img src="../static/images/uke.jpg" style="margin-left: 50px" class="img-thumbnail hobby" alt="Ukulele with disney characters painted on the side">
+              <img src="../static/images/uke.jpg" style="margin-left: 50px; max-width: 150px;" class="img-thumbnail" alt="Ukulele with disney characters painted on the side">
             </div>
-            <div class="rightdiv2">
+            <div class="rightdiv_a">
               <br><h2 style="color: #1C6E8C;">Customizations</h2>
-              <p>Something else I love doing is adding a bit of my personality to the jewlery I wear or the items I own. The first ukulele I bought 
-                (as part of a build it yourself set) didn't hold its tune too well, so when I saved up for a new one, I decided to turn it into an art piece. 
+              <p>Something else I love doing is adding a bit of my personality to the jewlery I wear or the items I own. The first ukulele I bought didn't hold it's tune too well, so when I saved up for a new one, I decided to turn it into an art piece. 
                 Disney music is super fun to play, so I decided to put my favourite characters on the ukulele. I also decided to make a few earring pairs for myself 
-                and a friend with our favourite album covers on them (folklore- Taylor Swift, Fine Line- Harry Styles). I love completing small crafts projects like these 
-                when I have some spare time.</p>
+                and a friend with our favourite album covers on them (folklore- Taylor Swift, Fine Line- Harry Styles). I often fill my spare time by completing small 
+                craft projects like these.</p>
             </div>
-            <div class="rightdiv3">
+            <div class="rightdiv_b">
               <img src="../static/images/earrings.jpg" style="margin-left: 40px; max-width: 160px;" class="img-thumbnail" alt="Earrings with the 'folklore' album cover on them">
             </div>
           </div>

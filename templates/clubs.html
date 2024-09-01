@@ -2,46 +2,131 @@
 {% block body %}
 <br><br><br>
   <main>
-    <div class="container py-4">
-      <header class="pb-3 mb-4 border-bottom">
-        <a class="d-flex align-items-center text-dark text-decoration-none">
-          <span class="fs-4">Extracurricular Activities</span>
-        </a>
-      </header>
-  
-      <div class="p-5 mb-4 bg-light rounded-3" style="background-image: url('../static/images/kennedy.png')">
+    <div class="container py-2">  
+      <div class="p-2 mb-1 bg-light rounded-3 row" style="background-image: url('../static/images/orb_back.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+        <div class="container-fluid py-5 row">
+          <div class="col"><h2 class="display-6 fw-bold">UW Orbital</h2></div>
+          <div class="col-1"><a href="https://www.uworbital.com/"><img src="/static/images/orb_logo.png" class="img-fluid" alt="Responsive image"></a></div>
+        </div>
+      </div> <br>
+      <div class="row">
+        <p>UW Orbital is what I’ve happily spent most of my time in university on and through that time I have held a number of different positions on the team. At first I started out as a member of the electrical power systems team, then eight months before our competition I became a lead. After our win at the <a href="https://www.csdcms.ca/">Canadian Satellite Design Challenge (CSDC-6)</a> we restructured to group teams by work and not subsystem, so I became an Electrical Lead as well as a Team Lead. At that point, we focused a lot of our energy on <a href="https://www.esa.int/Education/CubeSats_-_Fly_Your_Satellite">ESA's Fly Your Satellite 4 Programme</a>, which we were shortlisted for! This was an incredible experience which took place early this year that allowed us to tour the ESA facility in Amsterdam and compete for a launch opportunity. Though we didn't receive it this time, I hope to see Orion fly soon :)</p>
+        <p>I’ve gotten to design and lead the development of multiple subsystems while on the team, including working on our battery management system (schematic for MAX17320 chip, layout with battery pack cutout, and testing snippet shown below), power distribution system (MPPT, bucks, load switch) and attitude determination and controls system (reaction wheels, magnetorquers, sun sensors, GPS, IMU). There’s still lots to build on and improve, but the team has taught me so much - how to make clean schematics, important layout practices, PCB assembly methods, how to design functional and performance tests, how to be a good leader, and of course so much about the space industry in general.</p>
+        <p>I’ve recently moved to advisor on the team to ensure more members have an opportunity to lead while still being involved and invested.</p>
+        <p>Photos of the assembled CubeSat are also shown below!</p>
+      </div> <br>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/bms_1.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">BMS schematic</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/bms_2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">BMS 3D view</p>
+            </div>
+          </div>
+        </div>
+      </div> <br>
+
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/sat_1.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">Full CubeSat</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/bms_3.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">BMS testing</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/sat_2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">Full CubeSat</p>
+            </div>
+          </div>
+        </div>
+      </div> <br>
+
+      <div class="p-2 mb-1 bg-light rounded-3 row" style="background-image: url('../static/images/db_back.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+        <div class="container-fluid py-5 row">
+          <div class="col"><h2 class="display-6 fw-bold">UW Deep Blue</h2></div>
+          <div class="col-1"><img src="/static/images/db_logo.png" class="img-fluid" alt="Responsive image"></div>
+        </div>
+      </div> <br>
+      <div class="row">
+        <p>UW Deep Blue is an AUV Design Team that just started up this summer to compete in the <a href="https://robosub.org/">RoboSub competition</a>.</p>
+        <p>A few of my friends saw a AUV-sized gap in the list of design teams our school offers and decided to fill it. Together, we’ve formed UW Deep Blue, and hope to compete in the 2025 competition. I’m currently leading the Electrical team and focusing mainly on using an FPGA to process audio from our three hydrophones and guide our AUV around the playing field, and trying to design a 60-65Hz sonar transmitter to interact with other AUVs during the competition.</p>
+        <p>Pictured below is our currently very limited inventory and intro meetings, I’m so excited to spend more time on it and see what we can build :)</p>
+      </div> <br>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/db_inv.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">Getting started :)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/db_meeting.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">First intro meeting!</p>
+            </div>
+          </div>
+        </div>
+      </div> <br>
+      <div class="p-2 mb-1 bg-light rounded-3 row" style="background-image: url('../static/images/cpr_back.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
         <div class="container-fluid py-5">
-          <h2 class="display-6 fw-bold">Design Teams</h2>
-          <p>I've harboured an interest in space for a long time, and finally convinced my parents to take me to the Kennedy Space Center in 2019, which easily became my favourite trip of all time. Thus, when I got to Waterloo, I had to join some space related teams. Currently I'm a member of Waterloo Orbital and Waterloo Rocketry.</p>
-          <p>On UW Orbital I do electrical/circuit related work. I learned how to properly source components, how to use Altium, and a lot about MOSFETs and load switch circuits which was what I worked on for the Electrical Power Systems team this past term.</p>
-          <p>I do more mechanical related work on UW Rocketry. Through contributing to the Rogallo Wing design, I gained practice doing stress tests on SolidWorks and expanded my knowledge of design principles.</p>
+          <h2 class="display-6 fw-bold">CPR Guidance Tool</h2>
         </div>
-      </div>
-  
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-white bg-dark rounded-3" style="background-image: url('../static/images/tds.png'); background-repeat: no-repeat; background-size: 100%;">
-            <h2 class="display-6 fw-bold">The Debtless Students</h2>
-            <p>When I recieved the $100,000 Schulich Leader Scholarship, I knew wanted to help other hardworking students feel the same gratitude and excitement that I was feeling. Thus, I joined an organization called the Debtless Students made up of Schulich Leaders, Loran Scholars, TD Scholarship winners, and more, whose goals aligned with my own. As a Scholarship Mentor, I help my mentees with essay and application content, help them find scholarships that suit them, and guide them through the university and scholarship application process. I also co-host webinars with fellow mentors on our team.</p>
-            <a class="btn btn-primary" href="https://thedebtlessstudents.org/" role="button">The Debtless Students</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-light border rounded-3" style="background-image: url('../static/images/uw.png'); background-repeat: no-repeat; background-size: 100%;">
-            <h2 class="display-6 fw-bold">Engineering Ambassadors</h2>
-            <p>I became an engineering ambassador this past term and had a lot of fun connecting with prospective students and helping them understand more about Waterloo Engineering. I remember attending open houses and asking upper years a bunch of questions last year, and was so happy to recieve well thought out answers from them - which made me want to be on the other side of those chats this year. I often meet with students over video calls to answer all their questions, and also ran a chat booth this year during the Waterloo open house.</p>
-            <a class="btn btn-primary" href="https://uwaterloo.ca/engineering-student-ambassadors/" role="button">UW Eng Ambassadors</a>
-          </div>
-        </div>
+      </div> <br>
+      <div class="row">
+        <p>Though I completed this project quite long ago now, it’ll always be really special to me. It was the first time I took something from an idea to fruition. Though quite simple looking back, finishing this project gave me a lot of confidence and drive to pursue engineering.</p>
+        <p>In the heat of the pandemic I had talked to one of my teachers about subsequent struggles. He was teaching a CPR course without the ability to get close to students, which proved problematic. We came up with this idea to make a guidance tool with a pressure sensor that could go on a Resusci Anne unit, and would provide speed and pressure feedback via LEDs so that students could perfect the skill.</p>
+        <p>So that’s what I did! A PIC16F690 controls the board and is programmed in Assembly Language. The board was designed on Eagle and some process photos are included below of the design, assembly, and test process. The final product can be seen in this video I compiled of some of my first projects: <a href="https://www.youtube.com/watch?v=6pdLivuMACE">🎬</a></p>
+        <p>More personal projects can be seen on this page: <a class="btn btn-primary" href="{{ url_for('projects') }}" role="button">More!</a></p>
       </div><br>
-
-      <div class="p-5 mb-4 bg-light rounded-3" style="background-image: url('../static/images/team.png'); background-repeat: no-repeat; background-size: 100%;">
-        <div class="container-fluid py-5">
-          <h2 class="display-6 fw-bold">... and more!</h2>
-          <p>Before entering university, my most prominent extracurricular activities included volunteering at the YMCA Employment Resource Centre, volunteering as a MiWay (Mississauga Transit) Ambassador, being the Deputy Prime Minister on Student Council, being a FIRST Robotics Team member, and being a member of the St. Vincent de Paul Society where we packaged and delivered food to the less fortunate. My work at the YMCA Resource Centre earned me an <b>Ontario Volunteer Service Award</b>, which I am very proud of.</p>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/cpr_1.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">Testing code</p>
+            </div>
+          </div>
         </div>
-      </div>
-
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/cpr_2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">Board layout</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../static/images/cpr_3.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">Board assembly</p>
+            </div>
+          </div>
+        </div>
+      </div> <br>
     </div>
-  </main> <br>
+  </main> <br><br>
 {% endblock %}
